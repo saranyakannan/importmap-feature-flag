@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Feature Flag with Import Map</title>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "chat-widget": "./chat-widget.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the app</h1>
+    <div id="chat-container"></div>
+    <script type="module" src="./main.js"></script>
+</body>
